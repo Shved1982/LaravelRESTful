@@ -7,6 +7,7 @@ Requerments:
 - Mbstring PHP Extension
 
 How to start:
+
 1. Install Laravel 5 framework - composer global require "laravel/installer=~1.1"
 2. Clone repository - git clone https://github.com/Shved1982/LaravelRESTful.git
 3. Install dependesies - composer install.
