@@ -14,8 +14,8 @@ class AddForeignUserIdToMesagesTable extends Migration
     {
         Schema::table('messages', function (Blueprint $table) {   
             $table->index('id');
-            $table->foreign('user_to')->references('id')->on('users');
-            $table->foreign('user_from')->references('id')->on('users');
+            $table->foreign('user_to')->references('id')->on('users')->onDelete('cascade');
+            $table->foreign('user_from')->references('id')->on('users')->onDelete('cascade');
         });
     }
 
